@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+    <div class="todos">
+
+        <h1>todos</h1>
+
+        <div class="todos__box">
+            <div class="todos__header">
+                <input class="todos__selectall" type="checkbox">
+                <input class="todos__newtodo" type="text" placeholder="What needs to be done?" autofocus>
+            </div>
+
+            <div class="todos__main">
+                <ul class="todos__list">
+
+                    <!--
+                    <li>
+                        <div class="todos__listitem">
+                            <input type="checkbox" checked>
+                            <label>Помыть кота Помыть кота Помыть кота Помыть кота Помыть кота</label>
+                            <input type="button" value="×">
+                        </div>
+                    </li>
+
+                    
+                    <li>
+                        <div class="todos__listitem">
+                            <input type="checkbox">
+                            <label>Купить коврик</label>
+                        </div>
+                    </li>
+                    -->
+
+                </ul>
+            </div>
+
+            <div class="todos__footer">
+                <span class="todos__counter">2 items left</span>
+                <ul class="todos__filter">
+                    <li><a class="todos__showall selected" href="#" data-filter="1">All</a></li>
+                    <li><a class="todos__showactive" href="#" data-filter="2">Active</a></li>
+                    <li><a class="todos__showcompleted" href="#" data-filter="3">Completed</a></li>
+                </ul>
+                <a href="#">Clear completed</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>

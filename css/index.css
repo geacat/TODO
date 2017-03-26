@@ -1,0 +1,181 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #4d4d4d;
+}
+
+.todos {
+    width: 500px;
+    margin: 0 auto 0 auto;   
+    background-color: #ffffff;
+}
+
+.todos h1 {
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 20px 0;
+    font-weight: 100;
+    font-size: 100px;
+    color: rgba(175, 47, 47, 0.15);
+}
+
+.todos__box {
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.todos__header, 
+.todos__main {
+    font-size: 24px;
+}
+
+.todos__header {
+    position: relative;
+}
+
+.todos__selectall {
+    position: absolute;
+    height: 100%;
+    left: 16px;
+    margin: auto 0;
+}
+
+.todos__newtodo {
+    width: 100%;
+    margin: 0;
+    padding: 16px 16px 16px 60px;
+    border: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+    outline: none;
+}
+
+.todos__list {
+    margin: 0;
+    padding: 0;
+}
+
+.todos__list li {
+    list-style: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.todos__list li.hidden {
+    display: none;
+}
+
+.todos__listitem {
+    position: relative;
+}
+
+.todos__listitem input[type="checkbox"] {
+    position: absolute;
+    height: 100%;
+    margin: auto 0;
+    left: 16px;
+}
+
+.todos__listitem label {
+    width: 100%;
+    padding: 16px 60px 16px 60px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.todos__listitem input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+}
+
+.todos__listitem input[type="button"] {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    height: 100%;
+    margin: auto 0;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: inherit;
+    color: #cc9a9a;
+    outline: none;
+}
+
+.todos__listitem:hover input[type="button"] {
+    display: block;
+}
+
+.todos__listitem input[type="button"]:hover {
+    color: #af5b5e;
+    cursor: pointer;
+}
+
+.todos__footer {
+    position: relative;
+    height: 40px;
+    color: #777;
+}
+
+.todos__counter {
+    position: absolute;
+    line-height: 40px;
+    left: 16px;
+}
+
+.todos__filter {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.todos__filter li {
+    list-style: none;
+    display: inline-block;
+}
+
+.todos__filter li a {
+    margin: 0 3px;
+    padding: 3px 6px;
+    line-height: 40px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.todos__filter li a:hover {
+    border-color: rgba(175, 47, 47, 0.1);
+}
+
+.todos__filter li a.selected {
+    border-color: rgba(175, 47, 47, 0.2);
+}
+
+.todos__footer > a:hover {
+    text-decoration: underline;
+}
+
+.todos__footer > a {
+    display: none;
+    position: absolute;
+    right: 16px;
+    top: 0;
+    line-height: 40px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.todos__footer > a.visible {
+    display: inline;
+}
