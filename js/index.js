@@ -130,7 +130,6 @@ function onRemoveListItemClick(event) {
     var indexElement = indexOf(elements.list.children, event.target.parentNode.parentNode);
     removeTodo(indexElement);
 
-    // TODO: !!!!!!!!!!!!!!
     removeElementTodo(indexElement);
     updateCounter();
     updateClearCompleted();
@@ -166,7 +165,6 @@ function onSelectAllChange(event) {
 
 ////////////////////////////////////////////////// COUNTER
 function updateCounter() {
-    // TODO: !!!!!!!!!!!!!!
     
     var array = todos.filter(function(item, index, array) {
         return !(item.completed);
@@ -218,12 +216,10 @@ function updateFilter() {
         if (currentFilter === FILTER_ALL) {
         
         } else if (currentFilter ===  FILTER_ACTIVE) {
-            // TODO: !!!!!!!!!!!!!!
             if (todos[i].completed) {
                 elements.list.children[i].classList.add('hidden');
             }
         } else if (currentFilter === FILTER_COMPLETED) {    
-            // TODO: !!!!!!!!!!!!!!
             if (!(todos[i].completed)) {
                 elements.list.children[i].classList.add('hidden');
             }
@@ -233,7 +229,6 @@ function updateFilter() {
 
 ////////////////////////////////////////////////// CLEAR COMPLETED
 function updateClearCompleted() {
-    // TODO: !!!!!!!!!!!!!!
     var array = todos.filter(function(item, index, array) {
         return item.completed;
     })
@@ -245,7 +240,6 @@ function updateClearCompleted() {
 }
 
 function onClearCompletedClick(event) {
-    // TODO: !!!!!!!!!!!!!!
     var arrayCompleted = [];
 
     todos = todos.filter(function(item, i, array) {
@@ -264,8 +258,3 @@ function onClearCompletedClick(event) {
     elements.selectAll.checked = false;
     updateClearCompleted();
 }
-
-
-/// дописать обновление элемента в базе(галочки)
-/// дописать отображение зачеркнутых элементов
-/// дописать сохранение фильтра в базу
